@@ -1,0 +1,22 @@
+html{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 104%;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+header{
+    left: 2%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: .4rem;
+    color: white;
+    background-color:lightseagreen;
+}
+header p{
+    border-right: -2%;
+}
