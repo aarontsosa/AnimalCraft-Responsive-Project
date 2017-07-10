@@ -5,20 +5,26 @@ html, body, main{
     margin: 0;
 
 }
-header{
-    /*position: fixed;*/
+header div{
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    width: 100%;
     text-decoration: underline;
     letter-spacing: .2rem;
     color: white;
-    background-color: rgba(183, 213, 198, .7);
+    background-color: rgba(183, 213, 198, 1);
     border-bottom: .05rem solid #bcbebf;
+    margin:0;
 }
 header p{
     /*border-right: -2%;*/
+}
+.top{
+    margin-top: 3rem;
 }
 .nav{
     display: flex;
@@ -31,11 +37,20 @@ header p{
     flex-wrap: wrap;
     width: 50%;
 }
-.nav div p{
+.nav div p, .nav div a p{
     text-align: center;
     width: 100%;
     color: white;
     letter-spacing: .2rem;
+    text-decoration: none;
+  
+}
+/*.nav div a:hover{
+    background-color: #bcbebf;
+}*/
+.nav div a{
+    width: 100%;
+    text-decoration: none;
 }
 .top {
     border-bottom: .05rem solid #bcbebf;
