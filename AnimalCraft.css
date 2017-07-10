@@ -5,7 +5,7 @@ html, body, main{
     margin: 0;
 
 }
-header div{
+header div a{
     position: fixed;
     top: 0;
     display: flex;
@@ -22,6 +22,10 @@ header div{
 }
 header p{
     /*border-right: -2%;*/
+}
+.toppage{
+    position: fixed;
+    top: 0;
 }
 .top{
     margin-top: 3rem;
@@ -63,7 +67,7 @@ header p{
 }
 
 .pic img{
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     width: 100%;
 }
 .info{
