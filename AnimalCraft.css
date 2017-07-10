@@ -47,15 +47,17 @@ header p{
     border-right: .05rem solid #bcbebf;
 }
 
-.monkeypic img{
+.pic img{
     padding-top: 2rem;
     width: 100%;
 }
-.monkeyinfo{
+.info{
     font-size: 1rem;
-    width: 97%;
+    width: 95%;
     line-height: 1.4rem;
     text-indent: 2rem;
+    padding: 0 .7rem;
+    border-bottom: .05rem solid #bcbebf;
 }
 /*img{
     width: 20%;
