@@ -122,6 +122,7 @@ header div a{
         border: 1px solid black;
     }
     .activepic{
-        
+        object-fit: cover;
+        width: 100%;
     }
 }
