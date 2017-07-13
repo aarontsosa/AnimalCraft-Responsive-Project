@@ -6,6 +6,7 @@ html, body, main{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     margin: 0;
+    border: 2px solid black;
 
 }
 header div a{
@@ -23,10 +24,15 @@ header div a{
     border-bottom: .05rem solid #bcbebf;
     margin:0;
 }
-
+main{
+    margin-top: 25%;
+}
 .toppage{
-    position: fixed;
+    position: flex;
     top: 0;
+}
+ul{
+    background-color: blanchedalmond;
 }
 .top{
     margin-top: 3rem;

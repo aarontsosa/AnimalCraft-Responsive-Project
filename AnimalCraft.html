@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="AnimalCraft.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="AnimalCraft.js"></script>
+    <link rel="stylesheet" type="text/css" href="AnimalCraft.css"> 
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +24,7 @@
     <main>
         
         <a name="toppage"></a>
-        <div class="nav top">
+        <!-- <div class="nav top">
             <div class="Monkey">
                 <a href="#div_monkey"><p>Monkey</p></a>
             </div>
@@ -37,106 +42,124 @@
         </div>
         <div class="pic" id="div_monkey">
             <img src="monkeysmall.jpg">
-        </div>
-        <div class="info">
-            <p>
-                    The Japanese macaque (/məˈkɑːk/; Macaca fuscata), 
-                also known as the snow monkey, is a terrestrial Old World 
-                monkey species that is native to Japan. They get their name 
-                "snow monkey" because they live in areas where snow covers 
-                the ground for months each year – no other nonhuman primate 
-                is more northern-living, nor lives in a colder climate.
-                Individuals have brown-grey fur, red faces, and short tails. 
-                Two subspecies are known.
-            </p>
-            <p>
-                In Japan, the species is known as Nihonzaru 
-                (Nihon 日本 "Japan" + saru 猿 "monkey") to distinguish it from 
-                other primates, but the Japanese macaque is very familiar in 
-                Japan, so when Japanese people simply say saru, they usually 
-                have in mind the Japanese macaque.
-            </p>
-        </div>
-        <div class="pic" id="div_tiger">
-            <img src="tigersmall.jpg">
-        </div>
-        <div class="info">
-            <p>
-                    The Tiger (Panthera tigris) is the largest cat species, 
-                most recognizable for their pattern of dark vertical stripes 
-                on reddish-orange fur with a lighter underside.
-                The species is classified in the genus Panthera with the lion, 
-                leopard, jaguar, and snow leopard. Tigers are apex predators, 
-                primarily preying on ungulates such as deer and bovids. They 
-                are territorial and generally solitary but social animals, 
-                often requiring large contiguous areas of habitat that support 
-                their prey requirements. This, coupled with the fact that they 
-                are indigenous to some of the more densely populated places on 
-                Earth, has caused significant conflicts with humans.
+        </div> -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="#monkey" aria-controls="home" role="tab" data-toggle="tab">Monkey</a></li>
+            <li role="presentation"><a href="#tiger" aria-controls="profile" role="tab" data-toggle="tab">Tiger</a></li>
+            <li role="presentation"><a href="#panda" aria-controls="messages" role="tab" data-toggle="tab">Panda</a></li>
+            <li role="presentation"><a href="#penguin" aria-controls="settings" role="tab" data-toggle="tab">Penguin</a></li>
+         </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="monkey">
+                <div class="pic">
+                    <img src="monkeysmall.jpg">
+                </div>
+                <div class="info">
+                    <p>
+                            The Japanese macaque (/məˈkɑːk/; Macaca fuscata), 
+                        also known as the snow monkey, is a terrestrial Old World 
+                        monkey species that is native to Japan. They get their name 
+                        "snow monkey" because they live in areas where snow covers 
+                        the ground for months each year – no other nonhuman primate 
+                        is more northern-living, nor lives in a colder climate.
+                        Individuals have brown-grey fur, red faces, and short tails. 
+                        Two subspecies are known.
+                    </p>
+                    <p>
+                        In Japan, the species is known as Nihonzaru 
+                        (Nihon 日本 "Japan" + saru 猿 "monkey") to distinguish it from 
+                        other primates, but the Japanese macaque is very familiar in 
+                        Japan, so when Japanese people simply say saru, they usually 
+                        have in mind the Japanese macaque.
+                    </p>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in active" id="tiger">
+                <div class="pic">
+                    <img src="tigersmall.jpg">
+                </div>
+                <div class="info">
+                    <p>
+                            The Tiger (Panthera tigris) is the largest cat species, 
+                        most recognizable for their pattern of dark vertical stripes 
+                        on reddish-orange fur with a lighter underside.
+                        The species is classified in the genus Panthera with the lion, 
+                        leopard, jaguar, and snow leopard. Tigers are apex predators, 
+                        primarily preying on ungulates such as deer and bovids. They 
+                        are territorial and generally solitary but social animals, 
+                        often requiring large contiguous areas of habitat that support 
+                        their prey requirements. This, coupled with the fact that they 
+                        are indigenous to some of the more densely populated places on 
+                        Earth, has caused significant conflicts with humans.
 
 
-            </p>
-            <p>
-                    Tigers are among the most recognisable and popular of the world's 
-                charismatic megafauna. They have featured prominently in ancient 
-                mythology and folklore, and continue to be depicted in modern 
-                films and literature. They appear on many flags, coats of arms, 
-                and as mascots for sporting teams. The tiger is the national 
-                animal of Bangladesh, India, Malaysia and South Korea.
-            </p>
+                    </p>
+                    <p>
+                            Tigers are among the most recognisable and popular of the world's 
+                        charismatic megafauna. They have featured prominently in ancient 
+                        mythology and folklore, and continue to be depicted in modern 
+                        films and literature. They appear on many flags, coats of arms, 
+                        and as mascots for sporting teams. The tiger is the national 
+                        animal of Bangladesh, India, Malaysia and South Korea.
+                    </p>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in active" id="panda">
+                <div class="pic">
+                    <img src="pandasmall.jpg">
+                </div>
+                <div class="info">
+                    <p>
+                            The giant panda (Ailuropoda melanoleuca, literally "black and 
+                        white cat-foot"; Chinese: 大熊猫; pinyin: dà xióng māo, literally 
+                        "big bear cat"), also known as panda bear or simply panda, 
+                        is a bear native to south central China. It is easily 
+                        recognized by the large, distinctive black patches around 
+                        its eyes, over the ears, and across its round body. The name 
+                        "giant panda" is sometimes used to distinguish it from the 
+                        unrelated red panda. Though it belongs to the order Carnivora, 
+                        the giant panda's diet is over 99% bamboo. Giant pandas in 
+                        the wild will occasionally eat other grasses, wild tubers, or 
+                        even meat in the form of birds, rodents or carrion. In 
+                        captivity, they may receive honey, eggs, fish, yams, shrub 
+                        leaves, oranges, or bananas along with specially prepared 
+                        food.
+                    </p>
+                    <p>
+                            The giant panda lives in a few mountain ranges in central China, 
+                        mainly in Sichuan province, but also in neighbouring Shaanxi and 
+                        Gansu. As a result of farming, deforestation, and other 
+                        development, the giant panda has been driven out of the lowland 
+                        areas where it once lived.
+                    </p>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in active" id="penguin">
+                <div class="pic">
+                    <img src="penguinsmall.jpg">
+                </div>
+                <div class="info">
+                    <p>
+                            Penguins (order Sphenisciformes, family Spheniscidae) are a group 
+                        of aquatic, flightless birds. They live almost exclusively in the 
+                        Southern Hemisphere, with only one species, the Galapagos penguin, 
+                        found north of the equator. Highly adapted for life in the water, 
+                        penguins have countershaded dark and white plumage, and their 
+                        wings have evolved into flippers. Most penguins feed on krill, 
+                        fish, squid and other forms of sealife caught while swimming 
+                        underwater. They spend about half of their lives on land and half 
+                        in the oceans.
+                    </p>
+                    <p>
+                            Although almost all penguin species are native to the Southern 
+                        Hemisphere, they are not found only in cold climates, such as 
+                        Antarctica. In fact, only a few species of penguin live so far 
+                        south. Several species are found in the temperate zone, and one 
+                        species, the Galápagos penguin, lives near the equator.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="pic" id="div_panda">
-            <img src="pandasmall.jpg">
-        </div>
-        <div class="info">
-            <p>
-                    The giant panda (Ailuropoda melanoleuca, literally "black and 
-                white cat-foot"; Chinese: 大熊猫; pinyin: dà xióng māo, literally 
-                "big bear cat"), also known as panda bear or simply panda, 
-                is a bear native to south central China. It is easily 
-                recognized by the large, distinctive black patches around 
-                its eyes, over the ears, and across its round body. The name 
-                "giant panda" is sometimes used to distinguish it from the 
-                unrelated red panda. Though it belongs to the order Carnivora, 
-                the giant panda's diet is over 99% bamboo. Giant pandas in 
-                the wild will occasionally eat other grasses, wild tubers, or 
-                even meat in the form of birds, rodents or carrion. In 
-                captivity, they may receive honey, eggs, fish, yams, shrub 
-                leaves, oranges, or bananas along with specially prepared 
-                food.
-            </p>
-            <p>
-                    The giant panda lives in a few mountain ranges in central China, 
-                mainly in Sichuan province, but also in neighbouring Shaanxi and 
-                Gansu. As a result of farming, deforestation, and other 
-                development, the giant panda has been driven out of the lowland 
-                areas where it once lived.
-            </p>
-        </div>
-        <div class="pic" id="div_penguin">
-            <img src="penguinsmall.jpg">
-        </div>
-        <div class="info">
-            <p>
-                    Penguins (order Sphenisciformes, family Spheniscidae) are a group 
-                of aquatic, flightless birds. They live almost exclusively in the 
-                Southern Hemisphere, with only one species, the Galapagos penguin, 
-                found north of the equator. Highly adapted for life in the water, 
-                penguins have countershaded dark and white plumage, and their 
-                wings have evolved into flippers. Most penguins feed on krill, 
-                fish, squid and other forms of sealife caught while swimming 
-                underwater. They spend about half of their lives on land and half 
-                in the oceans.
-            </p>
-            <p>
-                    Although almost all penguin species are native to the Southern 
-                Hemisphere, they are not found only in cold climates, such as 
-                Antarctica. In fact, only a few species of penguin live so far 
-                south. Several species are found in the temperate zone, and one 
-                species, the Galápagos penguin, lives near the equator.
-            </p>
-        </div>
-    </div>
     <div class="tablet">
         <div class="tnav">
             <div class="imagearea">
@@ -167,13 +190,6 @@
                 <img id="mainpic" name="mainImage" class="mainImage" />
             </div>
             <div class="activeinfo">
-                <script>
-                    if($('.mainImage').html('id') === "monkey") {
-                        document.write(
-                            "<p> hello world</p>"
-                            )
-                    }
-                </script>
             </div>
         </div>
     </div>
