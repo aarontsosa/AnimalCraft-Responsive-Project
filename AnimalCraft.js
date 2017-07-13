@@ -1,5 +1,5 @@
 
-$('#myTabs a[href="#tiger"]').tab('show') // Select tab by name
-$('#myTabs a[href="#panda"]').tab('show') // Select tab by name
-$('#myTabs a[href="#penguin"]').tab('show') // Select tab by name
-$('#myTabs a[href="#monkey"]').tab('show') // Select tab by name
+$('#myTabs a[href="#tiger-tab"]').tab('show') // Select tab by name
+$('#myTabs a[href="#panda-tab"]').tab('show') // Select tab by name
+$('#myTabs a[href="#penguin-tab"]').tab('show') // Select tab by name
+$('#myTabs a[href="#monkey-tab"]').tab('show') // Select tab by name

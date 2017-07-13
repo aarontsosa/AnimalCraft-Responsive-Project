@@ -44,13 +44,25 @@
             <img src="monkeysmall.jpg">
         </div> -->
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation"><a href="#monkey" aria-controls="home" role="tab" data-toggle="tab">Monkey</a></li>
-            <li role="presentation"><a href="#tiger" aria-controls="profile" role="tab" data-toggle="tab">Tiger</a></li>
-            <li role="presentation"><a href="#panda" aria-controls="messages" role="tab" data-toggle="tab">Panda</a></li>
-            <li role="presentation"><a href="#penguin" aria-controls="settings" role="tab" data-toggle="tab">Penguin</a></li>
+            <li role="presentation" class="active">
+                <a href="#monkey" id="monkey-tab" aria-controls="monkey" role="tab" data-toggle="tab" aria-expanded="true">Monkey
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#tiger" id="tiger-tab" aria-controls="tiger" role="tab" data-toggle="tab" aria-expanded="false">Tiger
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#panda" id="panda-tab" aria-controls="panda" role="tab" data-toggle="tab" aria-expanded="false">Panda
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#penguin" id="penguin-tab" aria-controls="penguin" role="tab" data-toggle="tab" aria-expanded="false">Penguin
+                    </a>
+            </li>
          </ul>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="monkey">
+        <div class="tab-content" id="myTabContent">
+            <div role="tabpanel" class="tab-pane fade in active" aria-labelledby="monkey-tab" id="monkey">
                 <div class="pic">
                     <img src="monkeysmall.jpg">
                 </div>
@@ -74,7 +86,7 @@
                     </p>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade in active" id="tiger">
+            <div role="tabpanel" class="tab-pane fade" id="tiger" aria-labelledby="tiger-tab">
                 <div class="pic">
                     <img src="tigersmall.jpg">
                 </div>
@@ -104,7 +116,7 @@
                     </p>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade in active" id="panda">
+            <div role="tabpanel" class="tab-pane fade" id="panda" aria-labelledby="panda-tab">
                 <div class="pic">
                     <img src="pandasmall.jpg">
                 </div>
@@ -134,7 +146,7 @@
                     </p>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade in active" id="penguin">
+            <div role="tabpanel" class="tab-pane fade" id="penguin" aria-labelledby="penguin-tab">
                 <div class="pic">
                     <img src="penguinsmall.jpg">
                 </div>
